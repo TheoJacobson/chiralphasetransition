@@ -1,18 +1,18 @@
-function [condition,test,x] = sigmas(T,mu,s) %wrapper program for solving chiral field 
-cla;
+function [condition,test,x] = sigmas(mq,T,mu,s) %wrapper program for solving chiral field 
+%cla;
 numMesh = 1000;
 ui = 1e-2;
 % uf = 1-(1e-2);
-uf = 9.8e-1;
+uf = 9.7e-1;
 u = linspace(ui,uf,numMesh);
 
 mu0    = 430;
 mu1    = 830;
 mu2    = 176;
-% v3     = -3;
-v3=0;   %two flavor
+v3     = -3;
+%v3=0;   %two flavor
 v4     = 8;
-mq     = 0*9.75;
+%mq     = 37;
 %kappa  = 1; %defined in bhsolve
 
 

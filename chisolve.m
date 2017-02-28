@@ -8,7 +8,7 @@ initialC = [mq*sqrt(3)*zh*u(1)/(2*pi) + sig*2*pi*(zh^3)*u(1)^3/(sqrt(3))
            options = odeset('RelTol',1e-10,'AbsTol',1e-9);
        
     try
-           [~,y]=ode45(@(u,y) dydx(u,y),u,initialC,options);
+           [~,y]=ode45(@(u,y) dydx(u,y),u,initialC);
 
     catch
             disp(s);
